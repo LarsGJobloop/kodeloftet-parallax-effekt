@@ -5,25 +5,16 @@ body {
 .background-earth {
   background-image: url(assets/earth.jpg);
   background-size: cover;
+  background-position: left;
   background-attachment: fixed;
 }
 
 .section-hero {
-  height: 100vh; /* vh === ViewHeight antall 100% av skjermen*/
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.section-hero > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .section-details {
-  height: 100vh;
+  color: whitesmoke;
 }
 
 .astronaut-1 {
@@ -38,9 +29,34 @@ body {
   transform: translate(50vw, -40vh) rotate(213deg);
 }
 
+/* Utilities Classes */
+.max-width-medium {
+  max-width: 20rem;
+}
+
+.height-screen {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
 .glassmorphisme {
   /* From https://css.glass */
-  background: rgba(173, 170, 170, 0.27);
+  background: rgb(13 13 13 / 48%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.4px);
   -webkit-backdrop-filter: blur(7.4px);
